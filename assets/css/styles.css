@@ -158,6 +158,17 @@ img {
   text-align: center;
 }
 
+/* .about__img,
+.about__data,
+.skills__container,
+.qualification__container,
+.services__container,
+.portfolio__container,
+.contact__container {
+  text-align: center;
+} */
+
+
 /*==================== LAYOUT ====================*/
 .container {
   max-width: 768px;
@@ -207,7 +218,7 @@ img {
   color: var(--first-color);
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
   .nav__menu{ /*.nav__menu isn't styling correctly. 20:02min */
     position: fixed;
     bottom: -100%;
@@ -411,10 +422,27 @@ img {
 
 /*==================== ABOUT ====================*/
 .about__img{
-  width: 400px;
+  width: 200px;
   border-radius: .5rem;
-  justify-self: center;
-  align-self: center;
+  margin-bottom: var(--mb-2-5);
+  justify-self: center; 
+  align-self: center; 
+ 
+}
+
+ .about__container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   column-gap: 5rem
+ }
+
+.about__img {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .about__description{
@@ -1047,7 +1075,7 @@ left: -.5rem;
     justify-self: center;
   }
 
-  .about__container,
+  /* .about__container, */
   .skills__container,
   .portfolio__content,
   .project__container,
@@ -1128,9 +1156,18 @@ left: -.5rem;
     margin-left: 3rem;
   }
 
-  .about__container{
+  /* .about__container{
     column-gap: 5rem;
-  }
+  } */
+
+    /* .about__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      column-gap: 5rem
+    } */
+
   .about__img{
     width: 350px;
   }
@@ -1218,6 +1255,24 @@ left: -.5rem;
   .footer__container{
     padding: 0;
   }
+  
+    .skills__container,
+    .portfolio__content,
+    .project__container,
+    .contact__container,
+    .footer__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+        /* .about__img,
+        .about__data,
+        .skills__container,
+        .qualification__container,
+        .services__container,
+        .portfolio__container,
+        .contact__container {
+          text-align: center;
+        } */
 
   .home__blob{
     width: 320px;
@@ -1226,6 +1281,20 @@ left: -.5rem;
   /* .home__social{
     transform: translateX(-6rem); /* TODO: 2:31:26 translateX is not working */
   /* }  */
+
+    .about__container {
+      flex-direction: row;
+    }
+  
+    .about__img {
+      margin-bottom: 0;
+      margin-right: 20px;
+     
+    }
+  
+    .about__description {
+      text-align: left;
+    }
 
   .services__container{
     /* grid-template-columns: repeat(3, 238px); */
