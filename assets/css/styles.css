@@ -724,6 +724,7 @@ img {
 /*==================== PORTFOLIO ====================*/
 .portfolio__container{
   overflow: initial;
+  display: flex;
 }
 
 .portfolio__content{
@@ -1204,9 +1205,9 @@ left: -.5rem;
   .services__icon{
     font-size: 2rem;
   }
-  .services__content{
+  /* .services__content{
     padding: 6rem 0 2rem 2.5rem;
-  }
+  } */
   .services__modal--content{
     width: 450px;
   }
